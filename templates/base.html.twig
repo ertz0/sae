@@ -12,6 +12,9 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
-
-        <link href="https://bootswatch.com/5/darkly/bootstrap.css" type="text/css" rel="stylesheet" />
     </head>
+    <body>
+	<link href="https://bootswatch.com/5/darkly/bootstrap.css" rel="stylesheet">
+        {% block body %}{% endblock %}
+    </body>
+</html>
